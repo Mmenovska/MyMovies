@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray">
+
+    <TextView
+        android:id="@+id/text_view_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/label_logo"
+        android:textSize="@dimen/text_size_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/logo_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_standard"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_logo"
+        android:background="@drawable/round_corners"
+        android:layout_marginTop="@dimen/logo_margin"
+        android:hint="@string/username" />
+    <EditText
+        android:id="@+id/edit_text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_standard"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_username"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:background="@drawable/round_corners"
+        android:hint="@string/password"
+        />
+    
+    <TextView
+        android:id="@+id/text_view_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_pass"
+        android:layout_marginTop="@dimen/margin_standard"
+        app:layout_constraintStart_toStartOf="@id/edit_text_pass"
+        android:text="@string/forgot_your_password"
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/padding_standard"/>
+    
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        app:layout_constraintTop_toBottomOf="@id/text_view_pass"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/label_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/green"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
