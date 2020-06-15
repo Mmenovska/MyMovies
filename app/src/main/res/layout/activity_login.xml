@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/dark_gray">
+    android:background="@drawable/film">
 
     <TextView
         android:id="@+id/text_view_logo"
@@ -39,6 +39,7 @@
         android:layout_marginTop="@dimen/margin_standard"
         android:background="@drawable/round_corners"
         android:hint="@string/password"
+        android:inputType="textPassword"
         />
     
     <TextView

@@ -5,4 +5,9 @@
     <dimen name="text_size_logo">40sp</dimen>
     <dimen name="padding_standard">10dp</dimen>
     <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_image">25dp</dimen>
+    <dimen name="margin_min">5dp</dimen>
+    <dimen name="edt_txt_height">40dp</dimen>
+    <dimen name="drawable_padding"></dimen>
+
 </resources>

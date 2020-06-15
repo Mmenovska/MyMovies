@@ -5,4 +5,12 @@
     <string name="password">Password</string>
     <string name="label_login">Login</string>
     <string name="forgot_your_password">Forgot your password?</string>
+    <string name="explore">EXPLORE</string>
+    <string name="please_login">Please Login</string>
+    <string name="guest">Guest</string>
+    <string name="login">LOGIN</string>
+    <string name="people">PEOPLE</string>
+    <string name="watchlist">WATCHLIST</string>
+    <string name="rated">RATED</string>
+    <string name="favourites">FAVOURITES</string>
 </resources>

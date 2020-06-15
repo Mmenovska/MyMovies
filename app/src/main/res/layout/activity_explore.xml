@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_view_guest"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_image"
+        android:layout_marginStart="@dimen/margin_image"
+        android:src="@drawable/picture_one"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/dark_gray"/>
+    
+    <TextView
+        android:id="@+id/text_view_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/image_view_guest"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:text="@string/guest"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_view_please"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_view_guest"
+        app:layout_constraintStart_toStartOf="@id/text_view_guest"
+        android:text="@string/please_login"
+        android:textColor="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/text_view_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image_view_guest"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_image"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/explore"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/text_view_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_view_explore"
+        app:layout_constraintTop_toBottomOf="@id/text_view_explore"
+        android:text="@string/favourites"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_standard"/>
+    <TextView
+        android:id="@+id/text_view_rated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_view_explore"
+        app:layout_constraintTop_toBottomOf="@id/text_view_favourites"
+        android:text="@string/rated"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin_standard"/>
+    <TextView
+        android:id="@+id/text_view_watchlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_view_favourites"
+        app:layout_constraintTop_toBottomOf="@id/text_view_rated"
+        android:textColor="@color/white"
+        android:text="@string/watchlist"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_standard"/>
+    <TextView
+        android:id="@+id/text_view_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_view_rated"
+        app:layout_constraintTop_toBottomOf="@id/text_view_watchlist"
+        android:textStyle="bold" 
+        android:text="@string/people"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="@dimen/margin_standard"/>
+    <TextView
+        android:id="@+id/text_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_view_watchlist"
+        app:layout_constraintTop_toBottomOf="@id/text_view_people"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:textColor="@color/white"
+        android:text="@string/login"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
