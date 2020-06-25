@@ -1,10 +1,10 @@
 package com.android.gsixacademy.mymovies.models
 
-class PopularMovies (
+class MovieListResponse (
     val page : Int?,
     val total_pages : Int?,
     val total_results : Int?,
-    val results : ArrayList <PopularMoviesResult>
+    val results : ArrayList <MovieResult>
 ) {
 
 }

@@ -25,7 +25,7 @@ class ExploreMoviesPagerAdapter ( fragmentManager : FragmentManager) : FragmentS
         when (position) {
             0 -> return "Popular"
             1 -> return "Top Rated"
-            2 -> "Upcoming"
+            2 -> return "Upcoming"
             3 -> return "Now Playing"
 
 
@@ -38,10 +38,10 @@ class ExploreMoviesPagerAdapter ( fragmentManager : FragmentManager) : FragmentS
 
     fun getCategory (position: Int) : String {
         when (position){
-            0 -> "popular"
-            1 -> "top_rated"
-            2 -> "upcoming"
-            3 -> "now_playing"
+            0 -> return "popular"
+            1 -> return "top_rated"
+            2 -> return "upcoming"
+            3 -> return "now_playing"
         }
         return ""
     }

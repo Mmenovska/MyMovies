@@ -50,5 +50,4 @@ dependencies {
     implementation 'com.mikhaellopez:circularimageview:4.2.0'
 
 
-
 }

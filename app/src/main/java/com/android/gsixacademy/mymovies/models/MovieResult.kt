@@ -1,10 +1,10 @@
 package com.android.gsixacademy.mymovies.models
 
-class PopularMoviesResult (
+class MovieResult (
     val id : Int?,
     val title : String?,
     val poster_path : String?,
-    val vote_average : Int?,
+    val vote_average : String?,
 val release_date : String?,
     val overview : String?
 ) {

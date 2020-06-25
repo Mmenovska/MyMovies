@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.explore_item_list.*
 class ExploreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_explore)
+        setContentView(R.layout.explore_item_list)
 
         val adapter = ExploreMoviesPagerAdapter (supportFragmentManager)
 
