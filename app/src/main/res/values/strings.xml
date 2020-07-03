@@ -14,4 +14,9 @@
     <string name="rated">RATED</string>
     <string name="favourites">FAVOURITES</string>
     <string name="full_cast_text">see full cast &amp; crew</string>
+    <string name="profile">Profile</string>
+    <string name="watchlist_nav">Watchlist</string>
+    <string name="favorites">Favorites</string>
+    <string name="people_nav">People</string>
+    <string name="home">Home</string>
 </resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/green"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/dark_gray"
+        app:tabGravity="center"
+        app:tabMode="scrollable"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_movies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_search_explore"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_text_search_explore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_txt_height"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout_explore"
+        android:background="@drawable/round_corners"
+        android:layout_marginTop="@dimen/margin_min"
+        android:hint="Search"
+        android:paddingStart="@dimen/margin_large"
+        android:drawableLeft="@drawable/search_icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,6 @@
 package com.android.gsixacademy.mymovies.api
 
-import com.android.gsixacademy.mymovies.models.MovieCreditsResponse
-import com.android.gsixacademy.mymovies.models.MovieListResponse
-import com.android.gsixacademy.mymovies.models.MovieResponse
+import com.android.gsixacademy.mymovies.models.*
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -23,4 +21,16 @@ interface TheMovieDBApi {
 
     @GET("movie/{movieID}/credits?" + apiKey)
     fun getMovieCredits (@Path("movieID") movieId : Int?) : Call <MovieCreditsResponse>
+
+    @GET ("movie/{movieID}/videos?" + apiKey)
+    fun getMovieTrailers (@Path("movieID") movieId: Int?) : Call <MovieTrailersResponse>
+
+    @GET ("person/{person_id}?" + apiKey)
+    fun getPerson (@Path ("person_id") personId : Int?) : Call<PersonModel>
+
+    @GET ("person/{person_id}/movie_credits?" + apiKey)
+    fun getPersonMovies (@Path ("person_id") personId: Int?) : Call<PersonMovieResponse>
+
+    @GET ("person/popular?" + apiKey)
+    fun getPopularPersons() : Call<PeopleResponse>
 }

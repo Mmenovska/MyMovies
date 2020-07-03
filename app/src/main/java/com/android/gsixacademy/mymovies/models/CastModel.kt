@@ -1,7 +1,11 @@
 package com.android.gsixacademy.mymovies.models
 
-class CastModel (
-    val name : String?
-) {
+import java.io.Serializable
 
-}
+class CastModel (
+    val id : Int?,
+    val character : String?,
+    val profile_path : String,
+    val name : String?,
+    val gender : Int?
+) : Serializable

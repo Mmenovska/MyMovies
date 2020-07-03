@@ -12,15 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".movie_details.MovieDetailActivity"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".people.PeopleDetailActivity"></activity>
+        <activity
+            android:name=".movie_details.MovieFullCastActivity"
+            android:parentActivityName=".movie_details.MovieDetailActivity" />
+        <activity
+            android:name=".movie_details.MovieDetailActivity"
+            android:parentActivityName=".popularMovies.ExploreActivity" />
+        <activity android:name=".popularMovies.ExploreActivity" />
+        <activity android:name=".home.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".popularMovies.ExploreActivity" />
     </application>
 
 </manifest>

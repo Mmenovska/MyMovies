@@ -1,10 +1,11 @@
-package com.android.gsixacademy.mymovies
+package com.android.gsixacademy.mymovies.home
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.android.gsixacademy.mymovies.R
 import com.android.gsixacademy.mymovies.popularMovies.ExploreActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
